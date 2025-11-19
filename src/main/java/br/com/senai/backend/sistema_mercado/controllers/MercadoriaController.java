@@ -27,7 +27,7 @@ public class MercadoriaController {
         return merService.cadastrar(mercadoria);
     }
 
-    @GetMapping("/recuperar")
+    @GetMapping("/recuperar/{id}")
     public Mercadoria recuperarPorId(@RequestBody Integer id) {
         return merService.recuperarPorId(id);
 }

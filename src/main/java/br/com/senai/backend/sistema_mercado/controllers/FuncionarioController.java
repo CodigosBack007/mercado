@@ -27,7 +27,7 @@ public class FuncionarioController {
         return funService.cadastrar(funcionario);
     }
 
-    @GetMapping("/recuperar")
+    @GetMapping("/recuperar/{id}")
     public Funcionario recuperarPorId(@RequestBody Integer id) {
         return funService.recuperarPorId(id);
 }
