@@ -35,5 +35,13 @@ public class MercadoriaService {
         return null;
     }
     
+    public  boolean removerPorId(Integer id){
+        Mercadoria merc = merRepository.findById(id).get();
+        if(merc != null){
+          merRepository.deleteById(id);
+        return true;
+    }
+        return false;
 }
 
+}
